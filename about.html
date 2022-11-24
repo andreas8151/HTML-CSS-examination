@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <title>Om oss</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- navigation ----------------------- -->
+    <nav class="nav">
+      <ul>
+        <!-- todo skriv in href -->
+        <li><a href="./landingPage.html">Hem</a></li>
+        <li><a href="./productDetail.html">Detaljsida</a></li>
+        <li><a href="./productsPage.html">Alla tavlor</a></li>
+        <li><a href="./eventForm.html">Beställ tavla</a></li>
+        <li><a href="./about.html">Om Oss</a></li>
+      </ul>
+    </nav>
+    <!-- main ----------------------- -->
+    <main>
+      <div class="about">
+        <h1>Om Oss</h1>
+        <h2 class="text">Lincon AB</h2>
+        <p class="text">Startades år 1945</p>
+        <h3 class="text">Anställda</h3>
+        <p class="text">14st</p>
+        <h3 class="text">Vd</h3>
+        <p class="text">Johnny Depp, 58år</p>
+      </div>
+      <div class="vd">
+        <img class="johnny-img" src="./Photos/johnny.png" alt="Johnny Depp" />
+        <div class="johnny-info">
+          <p>VD: Johnny Depp</p>
+          <a class="contact-hover" href="tel:+05890000111">0-589-0000111</a>
+          <br />
+          <br />
+          <a class="contact-hover" href="mailto: JohnnyBoi@gmail.com"
+            >JohnnyBoi@gmail.com</a
+          >
+        </div>
+      </div>
+      <div>
+        <img class="team-img" src="./Photos/team.webp" alt="Team photo" />
+      </div>
+      <form class="form-2">
+        <div class="inner-form">
+          <div>
+            <label for="name">Namn</label>
+            <input
+              placeholder="Namn"
+              class="input-2"
+              type="text"
+              id="name"
+              name="name"
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              placeholder="Mail"
+              class="input-2"
+              type="email"
+              id="email"
+              name="email"
+            />
+          </div>
+          <div>
+            <label class="message" for="message">Meddelande</label>
+            <textarea
+              placeholder="Meddelande"
+              class="textarea-2"
+              id="message"
+              name="message"
+            ></textarea>
+          </div>
+          <div>
+            <input type="button" class="send" class="submit" value="Skicka" />
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <!--jQuery----------------------- -->
+    <script>
+      $(document).ready(function () {
+        $(".send").click(function () {
+          $(".inner-form").hide();
+          $(".inner-form").after(
+            "<small> Tack för att du är intresserad! </small>"
+          );
+          $("small").addClass("thanks-message");
+        });
+      });
+    </script>
+  </body>
+</html>

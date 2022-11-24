@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beställ tavla</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- navigation ----------------------- -->
+    <nav class="nav">
+        <ul>
+          <!-- todo skriv in href -->
+          <li><a href="./landingPage.html">Hem</a></li>
+            <li><a href="./productDetail.html">Detaljsida</a></li> 
+            <li><a href="./productsPage.html">Alla  tavlor</a></li>
+            <li><a href="./eventForm.html">Beställ tavla</a></li>
+            <li><a href="./about.html">Om Oss</a></li>
+        </ul>
+      </nav>
+    <!-- main/form ----------------------- -->
+    <main>
+      <form class="form" action="">
+        <div>
+          <label for="size">Namn</label>
+          <input class="input" type="text" name="name" id="name" />
+        </div>
+        <div>
+          <label for="date">Datum</label>
+          <input class="input" type="date" name="date" id="date" />
+        </div>
+        <div>
+          <label class="label-text" for="location">Plats</label>
+          <textarea class="input" placeholder="Plats" type="text" name="location" id="location"></textarea>
+        </div>
+        <div>
+          <lable class="label-text" for="description">Beskrivning</lable>
+          <textarea class="input" placeholder="Beskrivning" type="text" name="description" id="description"></textarea>
+        </div>
+        <div class="images">
+          <label for="image">Bild</label>
+          <input class="input" type="file" name="image" id="image" />
+          <input class="input" type="file" name="image" id="image" />
+          <input class="input" type="file" name="image" id="image" />
+          <input class="input" type="file" name="image" id="image" />
+        </div>
+        <div>
+          <label> Betalsätt </label>
+          <select class="dropBox">
+            <option value="Kronor">Kronor</option>
+            <option value="Bitcoin">Bitcoin</option>
+            <option value="Dollar">Dollar</option>
+          </select>
+        </div>
+        <div>
+            <input type="submit" name="buy" id="buy" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
